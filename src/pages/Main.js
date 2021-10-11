@@ -1,8 +1,13 @@
-
+import Filters from '../components/Filters';
+import Cards from '../components/Cards';
+import '../scss/Main/main.css';
 
 function Main() {
   return (
-    <h1>main</h1>
+    <main className="main">
+      <Filters />
+      <Cards />
+    </main>
   );
 };
 

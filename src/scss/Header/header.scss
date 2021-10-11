@@ -10,6 +10,7 @@ $orange: #ee5e0e;
   color: white;
   font-family: 'Roboto', sans-serif;
   position: relative;
+  width: 100vw;
 
   &__black {
     color: black;
@@ -22,7 +23,7 @@ $orange: #ee5e0e;
     height: 20rem;
     position: absolute;
     top: -5rem;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
   };
 

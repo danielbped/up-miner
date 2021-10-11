@@ -1,7 +1,14 @@
-export const cards = [
+import * as Icon from 'react-bootstrap-icons';
+export const Cards = [
   {
+    id: 0,
+    name: 'Todos',
+    imagePath: <Icon.Globe2/>,
+  },
+  {
+    id: 1,
     name: 'Profissional',
-    imagePath: <i class="bi bi-briefcase-fill"></i>,
+    imagePath: <Icon.BriefcaseFill/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -9,8 +16,9 @@ export const cards = [
     createdAt: Date(2021, 10, 2),
   },
   {
+    id: 2,
     name: 'Reguladores',
-    imagePath: <i class="bi bi-tree-fill"></i>,
+    imagePath: <Icon.Bank2/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -18,8 +26,9 @@ export const cards = [
     createdAt: Date(2021, 10, 1),
   },
   {
+    id: 3,
     name: 'Sócio Ambiental',
-    imagePath: <i class="bi bi-bank2"></i>,
+    imagePath: <Icon.TreeFill/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -27,17 +36,9 @@ export const cards = [
     createdAt: Date(2021, 10, 3),
   },
   {
-    name: 'Jurídico',
-    imagePath: <i class="bi bi-hammer"></i>,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
-    dictum at.`,
-    price: 59.99,
-    createdAt: Date(2021, 10, 4),
-  },
-  {
+    id: 4,
     name: 'Listas Restritivas',
-    imagePath: <i class="bi bi-x-circle"></i>,
+    imagePath: <Icon.XCircleFill/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -45,8 +46,9 @@ export const cards = [
     createdAt: Date(2021, 9, 2),
   },
   {
+    id: 5,
     name: 'Mídia / Internet',
-    imagePath: <i class="bi bi-globe"></i>,
+    imagePath: <Icon.Globe/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -54,8 +56,9 @@ export const cards = [
     createdAt: Date(2021, 8, 2),
   },
   {
+    id: 6,
     name: 'Financeiro',
-    imagePath: <i class="bi bi-piggy-bank-fill"></i>,
+    imagePath: <Icon.PiggyBankFill/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -63,17 +66,9 @@ export const cards = [
     createdAt: Date(2021, 7, 2),
   },
   {
-    name: 'Financeiro',
-    imagePath: <i class="bi bi-piggy-bank-fill"></i>,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
-    dictum at.`,
-    price: 159.99,
-    createdAt: Date(2021, 6, 2),
-  },
-  {
+    id: 7,
     name: 'Sócio Ambiental',
-    imagePath: <i class="bi bi-bank2"></i>,
+    imagePath: <Icon.TreeFill/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -81,8 +76,9 @@ export const cards = [
     createdAt: Date(2021, 5, 2),
   },
   {
+    id: 8,
     name: 'Jurídico',
-    imagePath: <i class="bi bi-hammer"></i>,
+    imagePath: <Icon.Hammer/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -90,8 +86,9 @@ export const cards = [
     createdAt: Date(2021, 4, 2),
   },
   {
+    id: 9,
     name: 'Cadastro',
-    imagePath: <i class="bi bi-person"></i>,
+    imagePath: <Icon.PersonFill/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
@@ -99,13 +96,13 @@ export const cards = [
     createdAt: Date(2021, 3, 2),
   },
   {
+    id: 10,
     name: 'Bens e Imóveis',
-    imagePath: <i class="bi bi-gem"></i>,
+    imagePath: <Icon.Gem/>,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
     Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
     dictum at.`,
     price: 109.99,
     createdAt: Date(2021, 2, 2),
   },
-  
 ];
