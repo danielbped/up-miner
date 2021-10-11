@@ -1,0 +1,59 @@
+$orange: #ee5e0e;
+$light-gray: #dad0d0;
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  &__card-item {
+    align-items: center;
+    border: 1px solid $light-gray;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    position: relative;
+    width: 25%;
+
+    &__name-image {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      &__name {
+        margin-top: .5rem;
+        opacity: .5;
+      };
+
+      &__image {
+        color: $orange;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      };
+    };
+
+    &__description {
+      margin: 1rem 1rem 5rem 1rem;
+      text-align: center;
+    };
+
+    &__button {
+      background-color: $orange;
+      border: none;
+      position: absolute;
+      bottom: 0;
+      color: white;
+      display: flex;
+      font-weight: bold;
+      justify-content: space-between;
+      padding: .5rem;
+      width: 100%;
+
+      &:hover {
+        cursor: pointer;
+      };
+    };
+  };
+};

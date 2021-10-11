@@ -1,6 +1,17 @@
+select:focus {
+  outline: none;
+}
+
 .filters {
   display: flex;
   justify-content: center;
+}
+.filters__select {
+  margin: 2rem 3rem;
+}
+.filters__select__label {
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
 .filters__button {
   align-items: center;

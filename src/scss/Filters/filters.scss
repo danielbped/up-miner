@@ -1,9 +1,22 @@
 $orange: #ee5e0e;
 $light-gray: #f5efef;
 
+select:focus{
+  outline: none;
+};
+
 .filters {
   display: flex;
   justify-content: center;
+
+  &__select {
+    margin: 2rem 3rem;
+
+    &__label {
+      font-weight: bold;
+      margin-right: .5rem;
+    };
+  };
 
   &__button {
     align-items: center;

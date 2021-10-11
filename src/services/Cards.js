@@ -9,9 +9,7 @@ export const Cards = [
     id: 1,
     name: 'Profissional',
     imagePath: <Icon.BriefcaseFill/>,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Sed quis pellentesque nisi. Quisque sed sapien id neque tristique 
-    dictum at.`,
+    description: ``,
     price: 29.99,
     createdAt: Date(2021, 10, 2),
   },
