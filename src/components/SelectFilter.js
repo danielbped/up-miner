@@ -12,7 +12,6 @@ function SelectFilter() {
 
   const handeChangeFilter = ({ target: { value } }) => {
     setFilters({ ...filters, order: value });
-    console.log(filters);
   }
 
   return (

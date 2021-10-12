@@ -39,16 +39,26 @@ $orange: #ee5e0e;
       border: none;
       opacity: .3;
       font-size: 1.3rem;
+      
+      @media(max-width: 1200px) {
+        &:first-child {
+          margin-left: 2rem;
+        };
+  
+        &:last-child {
+          margin-right: 2rem;
+        };
+      };
 
       @media (max-width: 480px) {
         display: none;
       };
-    }
+    };
 
     &__image {
       margin: 3rem;
-      height: 300px;
-      width: 500px;
+      height: 200px;
+      width: 400px;
 
       @media (max-width: 480px) {
         height: 250px;

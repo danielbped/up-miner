@@ -17,7 +17,7 @@ function Details(props) {
     setGraph(value);
   }
 
-  setTimeout(() => handleSetGraph(graph + 1), 5000);
+  setTimeout(() => handleSetGraph(graph + 1), 10000);
 
   return (
     <section className="details">
@@ -82,12 +82,14 @@ function Details(props) {
             { selectedCard.price }
           </span>
         </div>
-        <button
-          className="details__price-button__button"
-        >
-          Habilitar
-        </button>
-      </div>
+        <Link to='/contato'>
+          <button
+            className="details__price-button__button"
+          >
+            Habilitar
+          </button>
+        </Link>
+        </div>
     </section>
   );
 };

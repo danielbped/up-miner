@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
+.main-form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-form .send-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-form .send-form__text {
+  background-color: #2dbd2d;
+  border-radius: 1rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+.main-form .send-form__button {
+  background: linear-gradient(90deg, #faa732 0%, #ee5e0e 49%);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.main-form .send-form__button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 500ms;
+}
+.main-form__form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  width: 80%;
+}
+.main-form__form__input {
+  border: 1px solid #cfc2c2;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem;
+  padding: 1rem 2rem;
+}
+.main-form__form__button {
+  align-self: center;
+  background: linear-gradient(90deg, #faa732 0%, #ee5e0e 49%);
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+  width: 95%;
+}
+.main-form__form__button:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 500ms;
+}
+
+/*# sourceMappingURL=form.css.map */
