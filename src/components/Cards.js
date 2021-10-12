@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import * as CardList from '../services/Cards';
 import '../scss/Cards/cards.css';
 import Context from '../context/Context';
@@ -12,22 +13,44 @@ function Cards() {
   return (
     <section className="cards">
       { sortedItems.map(({ id, name, imagePath, description, price }) => (
-        name !== 'Todos' &&
-        <div className="cards__card-item" key={ id }>
-          <div className="cards__card-item__name-image">
-            <div className="cards__card-item__name-image__image">
+        name !== 'Todos' && id !== 10 &&
+        <div
+          className="cards__card-item"
+          key={ id }
+        >
+          <div
+            className="cards__card-item__name-image"
+          >
+            <div
+              className="cards__card-item__name-image__image"
+            >
               { imagePath }
             </div>
-            <div className="cards__card-item__name-image__name">
+            <div
+              className="cards__card-item__name-image__name"
+            >
               { name }
             </div>
           </div>
-          <div className="cards__card-item__description">
+          <div
+            className="cards__card-item__description"
+          >
             { description }
           </div>
-          <button className="cards__card-item__button" type="button">
-            { `R$ ${price}` }
-            <span className="cards__card-item__button__more">Saiba mais</span>
+          <button
+            className="cards__card-item__button" type="button"
+          >
+            <Link
+              className="cards__card-item__button__link"
+              to={`/detalhes/${id}`}
+            >
+              { `R$ ${price}` }
+              <span
+                className="cards__card-item__button__more"
+              >
+                Saiba mais
+              </span>
+            </Link>
           </button>
         </div>
       ))}

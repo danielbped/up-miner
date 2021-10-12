@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  position: absolute;
+  width: 100vw;
+}
+.details__back__link-to-main {
+  align-items: center;
+  color: #ee5e0e;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+.details__back__link-to-main__text {
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=details.css.map */

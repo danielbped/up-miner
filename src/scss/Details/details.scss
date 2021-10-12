@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+$orange: #ee5e0e;
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  position: absolute;
+  width: 100vw;
+
+  &__back {
+    &__link-to-main {
+      align-items: center;
+      color: $orange;
+      display: flex;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      margin-left: 3rem;
+      text-decoration: none;
+  
+      &__text {
+        margin-left: 1rem;
+      }
+    }
+  }
+}

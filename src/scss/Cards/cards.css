@@ -37,12 +37,15 @@
   border: none;
   position: absolute;
   bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+.cards__card-item__button__link {
   color: white;
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  padding: 0.5rem;
-  width: 100%;
+  text-decoration: none;
 }
 .cards__card-item__button:hover {
   cursor: pointer;

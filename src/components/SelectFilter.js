@@ -16,9 +16,17 @@ function SelectFilter() {
   }
 
   return (
-    <div className="filters__select">
-      <span className="filters__select__label">Ordenar</span>
-      <select onChange={ (e) => handeChangeFilter(e) }>
+    <div
+      className="filters__select"
+    >
+      <span
+        className="filters__select__label"
+      >
+        Ordenar
+      </span>
+      <select
+        onChange={ (e) => handeChangeFilter(e) }
+      >
         { options.map(({ id, name, value }) => (
           <option
             key={ id }
