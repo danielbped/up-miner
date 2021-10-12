@@ -9,7 +9,7 @@ function Header() {
   const changeCoverPath = () => coverPath === 0 ? setCoverPath(1) : setCoverPath(0);
   setTimeout(() => changeCoverPath(), 10000);
   const { imagePath } = Cover[coverPath];
-  const promoCard = Cards.find((card) => Number(card.id) === 10)
+  const promoCard = Cards.find((card) => Number(card.id) === 10);
   
   return (
     <header
@@ -57,14 +57,15 @@ function Header() {
         >
           { promoCard.price }
         </span>
-        <Link to={`/detalhes/${promoCard.id}`}>
+        <Link
+          to={`/detalhes/${promoCard.id}`}
+        >
           <button
             className="header__second-container__button"
             type="button"
           >
             Saiba Mais
           </button>
-        
         </Link>
       </div>
     </header>

@@ -28,8 +28,12 @@ function Form() {
   }
 
   return (
-    <main className="main-form">
-      <form className="main-form__form">
+    <main
+      className="main-form"
+    >
+      <form 
+        className="main-form__form"
+      >
         <Input
           className="main-form__form__input"
           name="name"

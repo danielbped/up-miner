@@ -12,7 +12,9 @@ function FilterButtons() {
   };
 
   return (
-    <section className="buttons">
+    <section
+      className="buttons"
+    >
         { FilterOptions.map(({ name, imagePath, id }) => (
           <button
             type="button"
@@ -21,7 +23,9 @@ function FilterButtons() {
             onClick={ () => handleFilterClick(id, name) }
           >
             { imagePath }
-            <p>{ name }</p>
+            <p>
+              { name }
+            </p>
           </button>
         ))}
     </section>

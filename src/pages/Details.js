@@ -20,8 +20,12 @@ function Details(props) {
   setTimeout(() => handleSetGraph(graph + 1), 10000);
 
   return (
-    <section className="details">
-      <div className="details__back">
+    <section
+      className="details"
+    >
+      <div
+        className="details__back"
+      >
         <Link
           className="details__back__link-to-main"
           to="/"
@@ -34,7 +38,9 @@ function Details(props) {
           </p>
         </Link>
       </div>
-      <div className="details__graphs">
+      <div
+        className="details__graphs"
+      >
         <button
           type="button"
           className="details__graphs__button"
@@ -60,14 +66,18 @@ function Details(props) {
           <Icon.ArrowRightCircle />
         </button>
       </div>
-      <div className="details__description">
+      <div
+        className="details__description"
+      >
         <p
           className="details__description__text"
         >
           { selectedCard.description }
         </p>
       </div>
-      <div className="details__price-button">
+      <div
+        className="details__price-button"
+      >
         <div
           className="details__price-button__price"
         >
@@ -82,7 +92,9 @@ function Details(props) {
             { selectedCard.price }
           </span>
         </div>
-        <Link to='/contato'>
+        <Link
+          to='/contato'
+        >
           <button
             className="details__price-button__button"
           >

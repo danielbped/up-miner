@@ -4,8 +4,12 @@ import '../scss/Form/form.css';
 
 function SendForm() {
   return (
-    <section className="send-form">
-      <p className="send-form__text">
+    <section
+      className="send-form"
+    >
+      <p
+        className="send-form__text"
+      >
         Muito obrigado por escolher o nosso serviço! Nossa equipe entrará em contato com você em alguns instantes.
       </p>
       <Link
