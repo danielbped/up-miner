@@ -36,7 +36,7 @@
  ### Formulário de Cadastro<br>
  ![Página de Detalhes](/images/form.png)
  
- ## Responsivo:
+ ## Responsividade:
  
  ### Página Inicial<br>
  ![Página Inicial](/images/main480.png)
