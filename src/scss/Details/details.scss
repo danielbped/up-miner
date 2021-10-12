@@ -4,6 +4,7 @@ $orange: #ee5e0e;
 .details {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
   margin-top: 3rem;
   position: absolute;
   width: 100vw;
@@ -13,7 +14,6 @@ $orange: #ee5e0e;
       align-items: center;
       color: $orange;
       display: flex;
-      font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 1.5rem;
       margin-left: 3rem;
@@ -21,7 +21,67 @@ $orange: #ee5e0e;
   
       &__text {
         margin-left: 1rem;
+      };
+    };
+  };
+
+  &__graphs {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    &__image {
+      margin: 3rem;
+      height: 300px;
+      width: 500px;
+    };
+
+  };
+  
+  &__description {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+      font-size: 1.3rem;
+      opacity: 0.6;
+      width: 80%;
+    };
+  };
+
+  &__price-button {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    font-weight: 700;
+    margin: 2rem 0;
+    width: 80%;
+
+    &__price {
+      &__real {
+        font-size: .7rem;
+        margin-right: .3rem;
+      };
+
+      &__value {
+        font-size: 1.5rem; 
       }
-    }
-  }
-}
+    };
+
+    &__button {
+      background: linear-gradient(90deg, rgb(250, 167, 50) 0%, $orange 49%);
+      border: none;
+      border-radius: .5rem;
+      color: white;
+      font-weight: 700;
+      margin-left: 1rem;
+      padding: .5rem 1rem;
+    
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        transition: 500ms;
+      };
+    };
+  };
+};

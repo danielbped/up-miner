@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Cover } from '../services/Cover'
 import '../scss/Header/header.css';
 import { Cards } from '../services/Cards';
@@ -56,12 +57,15 @@ function Header() {
         >
           { promoCard.price }
         </span>
-        <button
-          className="header__second-container__button"
-          type="button"
-        >
-          Saiba Mais
-        </button>
+        <Link to={`/detalhes/${promoCard.id}`}>
+          <button
+            className="header__second-container__button"
+            type="button"
+          >
+            Saiba Mais
+          </button>
+        
+        </Link>
       </div>
     </header>
   );

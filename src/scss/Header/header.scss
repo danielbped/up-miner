@@ -59,7 +59,7 @@ $orange: #ee5e0e;
     };
     
     &__button {
-      background-color: $orange;
+      background: linear-gradient(90deg, rgb(250, 167, 50) 0%, $orange 49%);
       border: none;
       border-radius: .5rem;
       color: white;

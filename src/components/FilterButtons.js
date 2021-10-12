@@ -12,11 +12,11 @@ function FilterButtons() {
   };
 
   return (
-    <section className="filters">
+    <section className="buttons">
         { FilterOptions.map(({ name, imagePath, id }) => (
           <button
             type="button"
-            className={`filters__button${filterSelected === id ? "__selected" : ''}`}
+            className={`buttons__button${filterSelected === id ? "__selected" : ''}`}
             key = { id }
             onClick={ () => handleFilterClick(id, name) }
           >

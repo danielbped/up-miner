@@ -33,7 +33,7 @@
   text-align: center;
 }
 .cards__card-item__button {
-  background-color: #ee5e0e;
+  background: linear-gradient(90deg, #faa732 0%, #ee5e0e 49%);
   border: none;
   position: absolute;
   bottom: 0;

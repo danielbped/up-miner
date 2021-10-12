@@ -17,10 +17,10 @@ function SelectFilter() {
 
   return (
     <div
-      className="filters__select"
+      className="buttons__select"
     >
       <span
-        className="filters__select__label"
+        className="buttons__select__label"
       >
         Ordenar
       </span>

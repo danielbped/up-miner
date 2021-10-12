@@ -7,10 +7,20 @@ select:focus{
 
 .filters {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.buttons {
+  align-self: center;
+  display: flex;
   justify-content: center;
+  width: 80%;
 
   &__select {
-    margin: 2rem 3rem;
+    align-self: center;
+    margin: 2rem 0;
+    width: 80%;
 
     &__label {
       font-weight: bold;

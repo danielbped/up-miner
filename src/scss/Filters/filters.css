@@ -4,16 +4,26 @@ select:focus {
 
 .filters {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.buttons {
+  align-self: center;
+  display: flex;
   justify-content: center;
+  width: 80%;
 }
-.filters__select {
-  margin: 2rem 3rem;
+.buttons__select {
+  align-self: center;
+  margin: 2rem 0;
+  width: 80%;
 }
-.filters__select__label {
+.buttons__select__label {
   font-weight: bold;
   margin-right: 0.5rem;
 }
-.filters__button {
+.buttons__button {
   align-items: center;
   background-color: #f5efef;
   border: none;
@@ -21,7 +31,7 @@ select:focus {
   flex-direction: column;
   padding: 1.3rem;
 }
-.filters__button__selected {
+.buttons__button__selected {
   align-items: center;
   background-color: #ee5e0e;
   border: none;
@@ -30,7 +40,7 @@ select:focus {
   flex-direction: column;
   padding: 1.3rem;
 }
-.filters__button:hover {
+.buttons__button:hover {
   cursor: pointer;
   transform: scale(1.02);
   transition: 500ms;

@@ -5,7 +5,7 @@ import '../scss/Filters/filters.css';
 
 function Filters() {
   return (
-    <div>
+    <div className="filters">
       <FilterButtons />
       <SelectFilter />
     </div>

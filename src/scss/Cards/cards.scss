@@ -40,7 +40,7 @@ $light-gray: #dad0d0;
     };
 
     &__button {
-      background-color: $orange;
+      background: linear-gradient(90deg, rgb(250, 167, 50) 0%, $orange 49%);
       border: none;
       position: absolute;
       bottom: 0;

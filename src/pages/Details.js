@@ -27,12 +27,12 @@ function Details(props) {
       </div>
       <div className="details__graphs">
         <img
-          className="details__description__image"
+          className="details__graphs__image"
           src={selectedCard.graphPaths[0].path}
           alt={ `Gráfico ${selectedCard.name}` }
         />
         <img
-          className="details__description__image"
+          className="details__graphs__image"
           src={selectedCard.graphPaths[1].path}
           alt={ `Gráfico ${selectedCard.name}` }
         />
@@ -43,6 +43,27 @@ function Details(props) {
         >
           { selectedCard.description }
         </p>
+      </div>
+      <div className="details__price-button">
+        <div
+          className="details__price-button__price"
+        >
+          <span
+            className="details__price-button__price__real"
+          >
+            R$
+          </span>
+          <span
+            className="details__price-button__price__value"
+          >
+            { selectedCard.price }
+          </span>
+        </div>
+        <button
+          className="details__price-button__button"
+        >
+          Habilitar
+        </button>
       </div>
     </section>
   );
