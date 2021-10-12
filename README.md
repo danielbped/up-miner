@@ -24,3 +24,26 @@
   4 - Pronto, agora o projeto está pronto para ser rodado localmente, utilizando o comando **npm start**:
   
     npm start
+    
+ ## Resultado:
+ 
+ ### Página Inicial<br>
+ ![Página Inicial](/images/main.png)
+ 
+ ### Página de Detalhes<br>
+ ![Página de Detalhes](/images/details.png)
+ 
+ ### Formulário de Cadastro<br>
+ ![Página de Detalhes](/images/form.png)
+ 
+ ## Responsivo:
+ 
+ ### Página Inicial<br>
+ ![Página Inicial](/images/main480.png)
+ 
+ ### Página de Detalhes<br>
+ ![Página de Detalhes](/images/details480.png)
+ ![Página de Detalhes](/images/details2-480.png.png)
+ 
+ ### Formulário de Cadastro<br>
+ ![Página de Detalhes](/images/form480.png)
