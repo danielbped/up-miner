@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as CardList from '../services/Cards';
 import '../scss/Cards/cards.css';
+import Context from '../context/Context';
 
 function Cards() {
+  const { filters } = useContext(Context);
+  const { filtered, order } = filters;
+  const cardsFiltered = filtered === 'Todos' ? CardList.Cards : CardList.Cards.filter((card) => card.name.includes(filtered));
+  const sortedItems = order !== '' ? cardsFiltered.sort((a, b) => a[order] - b[order]) : cardsFiltered.sort((a, b) => a.id - b.id);
+
   return (
     <section className="cards">
-      { CardList.Cards.map(({ id, name, imagePath, description, price }) => (
-        name !== 'Todos' && <div className="cards__card-item">
+      { sortedItems.map(({ id, name, imagePath, description, price }) => (
+        name !== 'Todos' &&
+        <div className="cards__card-item" key={ id }>
           <div className="cards__card-item__name-image">
             <div className="cards__card-item__name-image__image">
               { imagePath }

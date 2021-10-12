@@ -1,21 +1,24 @@
-import React, { useState }  from 'react';
-import { Cards } from '../services/Cards';
+import React, { useState, useContext }  from 'react';
+import { FilterOptions } from '../services/FilterOptions';
 import '../scss/Filters/filters.css';
+import Context from '../context/Context';
 
 function FilterButtons() {
   const [filterSelected, setFilterSelected] = useState(0);
-  const handleFilterClick = (id) => {
+  const { filters, setFilters } = useContext(Context);
+  const handleFilterClick = (id, name) => {
     setFilterSelected(id);
+    setFilters({ ...filters, filtered: name });
   };
 
   return (
     <section className="filters">
-        { Cards.map(({ name, imagePath, id }) => (
+        { FilterOptions.map(({ name, imagePath, id }) => (
           <button
             type="button"
             className={`filters__button${filterSelected === id ? "__selected" : ''}`}
             key = { id }
-            onClick={ () => handleFilterClick(id) }
+            onClick={ () => handleFilterClick(id, name) }
           >
             { imagePath }
             { name }
