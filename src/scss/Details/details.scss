@@ -30,6 +30,13 @@ $orange: #ee5e0e;
     justify-content: center;
     margin-top: 1rem;
 
+    &__button {
+      background-color: white;
+      border: none;
+      opacity: .3;
+      font-size: 1.3rem;
+    }
+
     &__image {
       margin: 3rem;
       height: 300px;

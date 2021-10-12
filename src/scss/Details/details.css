@@ -1,71 +1,113 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Roboto', sans-serif;
   margin-top: 3rem;
   position: absolute;
   width: 100vw;
 }
+
 .details__back__link-to-main {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #ee5e0e;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: 300;
   font-size: 1.5rem;
   margin-left: 3rem;
   text-decoration: none;
 }
+
 .details__back__link-to-main__text {
   margin-left: 1rem;
 }
+
 .details__graphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
 }
+
+.details__graphs__button {
+  background-color: white;
+  border: none;
+  opacity: .3;
+  font-size: 1.3rem;
+}
+
 .details__graphs__image {
   margin: 3rem;
   height: 300px;
   width: 500px;
 }
+
 .details__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .details__description__text {
   font-size: 1.3rem;
   opacity: 0.6;
   width: 80%;
 }
+
 .details__price-button {
-  align-items: center;
-  align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-weight: 700;
   margin: 2rem 0;
   width: 80%;
 }
+
 .details__price-button__price__real {
-  font-size: 0.7rem;
-  margin-right: 0.3rem;
+  font-size: .7rem;
+  margin-right: .3rem;
 }
+
 .details__price-button__price__value {
   font-size: 1.5rem;
 }
+
 .details__price-button__button {
+  background: -webkit-gradient(linear, left top, right top, from(#faa732), color-stop(49%, #ee5e0e));
   background: linear-gradient(90deg, #faa732 0%, #ee5e0e 49%);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   color: white;
   font-weight: 700;
   margin-left: 1rem;
-  padding: 0.5rem 1rem;
-}
-.details__price-button__button:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-  transition: 500ms;
+  padding: .5rem 1rem;
 }
 
+.details__price-button__button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
 /*# sourceMappingURL=details.css.map */

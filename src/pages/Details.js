@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
 import { Cards } from '../services/Cards';
@@ -9,6 +9,15 @@ function Details(props) {
   const { params } = match;
   const { id } = params;
   const selectedCard = Cards.find((card) => Number(card.id) === Number(id));
+  const [graph, setGraph] = useState(0);
+
+  const handleSetGraph = (value) => {
+    if (graph >= 0 && graph < 2) return setGraph(2);
+    else if (graph >= 2) return setGraph(0);
+    setGraph(value);
+  }
+
+  setTimeout(() => handleSetGraph(graph + 1), 5000);
 
   return (
     <section className="details">
@@ -26,16 +35,30 @@ function Details(props) {
         </Link>
       </div>
       <div className="details__graphs">
+        <button
+          type="button"
+          className="details__graphs__button"
+          onClick={ () => handleSetGraph(graph - 1) }
+        >
+          <Icon.ArrowLeftCircle />
+        </button>
         <img
           className="details__graphs__image"
-          src={selectedCard.graphPaths[0].path}
+          src={selectedCard.graphPaths[graph].path}
           alt={ `Gráfico ${selectedCard.name}` }
         />
         <img
           className="details__graphs__image"
-          src={selectedCard.graphPaths[1].path}
+          src={selectedCard.graphPaths[graph + 1].path}
           alt={ `Gráfico ${selectedCard.name}` }
         />
+        <button
+          type="button"
+          className="details__graphs__button"
+          onClick={ () => handleSetGraph(graph + 1) }
+        >
+          <Icon.ArrowRightCircle />
+        </button>
       </div>
       <div className="details__description">
         <p
