@@ -21,7 +21,7 @@ function FilterButtons() {
             onClick={ () => handleFilterClick(id, name) }
           >
             { imagePath }
-            { name }
+            <p>{ name }</p>
           </button>
         ))}
     </section>

@@ -36,6 +36,14 @@ select:focus{
     flex-direction: column;
     padding: 1.3rem;
 
+    @media (max-width: 480px) {
+      padding: 1rem;
+
+      & p {
+        display: none;
+      };
+    };
+
     &__selected {
       align-items: center;
       background-color: $orange;
@@ -44,6 +52,14 @@ select:focus{
       display: flex;
       flex-direction: column;
       padding: 1.3rem;
+      
+      @media(max-width: 480px) {
+        padding: 1rem;
+
+        & p {
+          display: none;
+        };
+      };
     };
 
     &:hover {

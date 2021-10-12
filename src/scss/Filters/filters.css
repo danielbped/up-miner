@@ -3,79 +3,63 @@ select:focus {
 }
 
 .filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 
 .buttons {
-  -ms-flex-item-align: center;
-      align-self: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-self: center;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 80%;
 }
-
 .buttons__select {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin: 2rem 0;
   width: 80%;
 }
-
 .buttons__select__label {
   font-weight: bold;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
-
 .buttons__button {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #f5efef;
   border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 1.3rem;
 }
-
+@media (max-width: 480px) {
+  .buttons__button {
+    padding: 1rem;
+  }
+  .buttons__button p {
+    display: none;
+  }
+}
 .buttons__button__selected {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: #ee5e0e;
   border: none;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 1.3rem;
 }
-
+@media (max-width: 480px) {
+  .buttons__button__selected {
+    padding: 1rem;
+  }
+  .buttons__button__selected p {
+    display: none;
+  }
+}
 .buttons__button:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-transition: 500ms;
+  transform: scale(1.02);
   transition: 500ms;
 }
+
 /*# sourceMappingURL=filters.css.map */

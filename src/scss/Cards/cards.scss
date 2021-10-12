@@ -22,9 +22,17 @@ $light-gray: #dad0d0;
       display: flex;
       flex-direction: column;
 
+      @media (max-width: 480px) {
+        margin-bottom: 2rem;
+      };
+
       &__name {
         margin-top: .5rem;
         opacity: .5;
+
+        @media (max-width: 480px) {
+          padding-bottom: 2rem;
+        };
       };
 
       &__image {
@@ -37,6 +45,10 @@ $light-gray: #dad0d0;
     &__description {
       margin: 1rem 1rem 5rem 1rem;
       text-align: center;
+
+      @media (max-width: 480px) {
+        display: none;
+      };
     };
 
     &__button {
@@ -53,6 +65,12 @@ $light-gray: #dad0d0;
         font-weight: bold;
         justify-content: space-between;
         text-decoration: none;
+
+        @media (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          font-size: .7rem;
+        };
       }
 
       &:hover {

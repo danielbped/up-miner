@@ -12,10 +12,22 @@ $orange: #ee5e0e;
   position: relative;
   width: 100vw;
 
+
+  @media (max-width: 480px) {
+    background: linear-gradient(90deg, rgb(250, 167, 50) 0%, $orange 49%);
+    display: flex;
+  };
+
   &__black {
     color: black;
     font-family: 'Roboto', sans-serif;
     position: relative;
+
+    @media (max-width: 480px) {
+      color: white;
+      background: linear-gradient(90deg, rgb(250, 167, 50) 0%, $orange 49%);
+      display: flex;
+    };
   }
 
   &__image {
@@ -25,6 +37,10 @@ $orange: #ee5e0e;
     top: -5rem;
     width: 100%;
     z-index: -1;
+
+    @media (max-width: 480px) {
+      display: none;
+    };
   };
 
   &__first-container {
@@ -40,6 +56,10 @@ $orange: #ee5e0e;
       font-size: 1.3rem;
       margin-top: 2rem;
       width: 50%;
+
+      @media (max-width: 480px) {
+        display: none;
+      };
     };
   };
 
